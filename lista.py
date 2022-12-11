@@ -1,3 +1,6 @@
+#from PySimpleGUI import PySilmpleGUI as sg
+
+
 lista_convidados = []
 
 x = int(input("Entre com o numero de convidados: "))
