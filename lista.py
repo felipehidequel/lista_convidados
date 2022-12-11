@@ -6,6 +6,7 @@ lista_convidados = []
 
 layout = [
     [sg.Text('Insira o número de convidados'), sg.Input(key='convidado')] #layout
+    [sg.Button('Confirmar')]
     #for i in range(1, convidado+1):
 ]
 # #x = int(input("Entre com o numero de convidados: "))
@@ -26,3 +27,6 @@ while True:
     acao, valor = janela.read()
     if acao == sg.WINDOW_CLOSED: #fechamento da janela caso o usuario não queira insirir umvalor
         break
+    if acao == 'Confirmar':
+        for i in range(1, valor['convidado'] + 1):
+            remove_nome_repetido = set(lista_convidados)
