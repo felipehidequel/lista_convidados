@@ -5,7 +5,7 @@ lista_convidados = []
 
 
 layout = [
-    [sg.Text('Insira o número de convidados'), sg.Input(key='convidado')]
+    [sg.Text('Insira o número de convidados'), sg.Input(key='convidado')] #layout
     #for i in range(1, convidado+1):
 ]
 # #x = int(input("Entre com o numero de convidados: "))
