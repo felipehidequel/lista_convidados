@@ -1,14 +1,15 @@
-from PySimpleGUI import PySilmpleGUI as sg
+#from PySimpleGUI import PySilmpleGUI as sg
+from PySimpleGUI import PySimpleGUI as sg
 
-
+sg.theme('DarkAmber')
 lista_convidados = []
 
 
 layout = [
-    [sg.Text('Insira o número de convidados'), sg.Input(key='convidado')] #layout
+    [sg.Text('Insira o número de convidados'), sg.Input(key='convidado')], #layout
     [sg.Button('Confirmar')]
-    #for i in range(1, convidado+1):
-]
+        #for i in range(1, convidado+1):
+    ]
 # #x = int(input("Entre com o numero de convidados: "))
 # for i in range(1, convidado+1):
 
