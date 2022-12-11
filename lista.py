@@ -30,3 +30,4 @@ while True:
     if acao == 'Confirmar':
         for i in range(1, valor['convidado'] + 1):
             remove_nome_repetido = set(lista_convidados)
+            lista_final = tuple(remove_nome_repetido)
