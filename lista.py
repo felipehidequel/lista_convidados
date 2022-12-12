@@ -1,4 +1,3 @@
-#from PySimpleGUI import PySilmpleGUI as sg
 from PySimpleGUI import PySimpleGUI as sg
 
 sg.theme('DarkAmber')
