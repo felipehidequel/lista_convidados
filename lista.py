@@ -30,7 +30,7 @@ while True:
         break
     if acao == 'Confirmar':
         # if valor['covidado'] == 'convidar':
-        for i in range(1, valor['convidado {}'.format{+1}]):       
+        for i in range(1, valor['convidado {}'.format(1)]):       
             remove_nome_repetido = set(lista_convidados)
             lista_final = tuple(remove_nome_repetido)
             print("----- LISTA DE CONVIDADOS -----")
