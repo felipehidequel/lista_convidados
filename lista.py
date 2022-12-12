@@ -29,7 +29,7 @@ while True:
     if acao == sg.WINDOW_CLOSED: #fechamento da janela caso o usuario não queira insirir umvalor
         break
     if acao == 'Confirmar':
-        #for i in range(1, valor['convidado'] + 1):
+        # if valor['covidado'] == 'convidar':
         for i in valor['convidado']:       
             remove_nome_repetido = set(lista_convidados)
             lista_final = tuple(remove_nome_repetido)
