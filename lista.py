@@ -7,7 +7,7 @@ layout = [
     [sg.Text('Insira o número de convidados'), sg.Input(key='convidado')], #layout
     [sg.Button('Confirmar')]
         #for i in range(1, convidado+1):
-    ]
+]
 
 janela = sg.Window('Menu', layout)
 
