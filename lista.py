@@ -1,10 +1,10 @@
 from PySimpleGUI import PySimpleGUI as sg
 
-sg.theme('DarkPuple3')
+sg.theme('DarkPuple4')
 lista_convidados = []
 
 layout = [
-    [sg.Text('Insira o número de convidados'), sg.Input(key='convidado')], #layout
+    [sg.Text('Insira o número de convidados'), sg.Input(key='convidado', size=(10, 3))], #layout
     [sg.Button('Confirmar')]
 ]
 
