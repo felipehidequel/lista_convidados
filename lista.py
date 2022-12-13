@@ -6,19 +6,18 @@ lista_convidados = []
 layout = [
     [sg.Text('Insira o número de convidados'), sg.Input(key='convidado')], #layout
     [sg.Button('Confirmar')]
-        #for i in range(1, convidado+1):
 ]
 
 janela = sg.Window('Menu', layout)
 
 while True:
     acao, valor = janela.read()
-    valor['convidado'] = int('numero')
+    numero = valor['convidado']
     if acao == sg.WINDOW_CLOSED:
         break
     if acao == 'Confirmar':
         # if valor['covidado'] == 'convidar':
-        for i in range(1, 'numero'+1):       
+        for i in range(1, int(numero)+1):       
             remove_nome_repetido = set(lista_convidados)
             lista_final = tuple(remove_nome_repetido)
             print("----- LISTA DE CONVIDADOS -----")
