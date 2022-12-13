@@ -16,9 +16,9 @@ while True:
     if acao == sg.WINDOW_CLOSED:
         break
     if acao == 'Confirmar':
+        print("----- LISTA DE CONVIDADOS -----")
         for i in range(1, int(numero)+1):       
             remove_nome_repetido = set(lista_convidados)
             lista_final = tuple(remove_nome_repetido)
-            print("----- LISTA DE CONVIDADOS -----")
             for i in range(len(lista_final)):
                 print(lista_final[i])
