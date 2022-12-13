@@ -16,7 +16,6 @@ while True:
     if acao == sg.WINDOW_CLOSED:
         break
     if acao == 'Confirmar':
-        # if valor['covidado'] == 'convidar':
         for i in range(1, int(numero)+1):       
             remove_nome_repetido = set(lista_convidados)
             lista_final = tuple(remove_nome_repetido)
