@@ -1,6 +1,6 @@
 from PySimpleGUI import PySimpleGUI as sg
 
-sg.theme('DarkAmber')
+sg.theme('DarkPuple3')
 lista_convidados = []
 
 layout = [
