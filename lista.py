@@ -17,6 +17,6 @@ while True:
         break
     if acao == 'Confirmar':
         print("----- LISTA DE CONVIDADOS -----")
-        for i in range(1, int(numero)+1):
+        for i in range(int(numero)):
             nomes = input('nome do convidado: ')
             print(nomes)
