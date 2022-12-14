@@ -19,4 +19,4 @@ while True:
         print("----- LISTA DE CONVIDADOS -----")
         for i in range(1, int(numero)+1):
             nomes = input('nome do convidado: ')
-        print(nomes)
+            print(nomes)
