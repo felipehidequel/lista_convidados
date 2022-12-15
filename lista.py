@@ -24,5 +24,4 @@ while contador < numero:
     for x in lista:            
         print(x)
         contador += 1
-    break        
-    
+    break
