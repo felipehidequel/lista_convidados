@@ -2,7 +2,6 @@ from PySimpleGUI import PySimpleGUI as sg
 
 sg.theme('DarkGrey')
 
-
 layout = [
     [sg.Text('Insira o número de convidados'), sg.Input(key='convidado', size=(10, 3))], #layout
     [sg.Button('Confirmar')]
