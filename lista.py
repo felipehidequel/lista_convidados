@@ -1,6 +1,6 @@
 from PySimpleGUI import PySimpleGUI as sg
 
-sg.theme('DarkPuple4')
+sg.theme('DarkGrey')
 
 
 layout = [
@@ -10,13 +10,20 @@ layout = [
 
 janela = sg.Window('Menu', layout)
 
-while True:
-    acao, valor = janela.read()
-    numero = valor['convidado']
+acao, valor = janela.read()
+numero = int(valor['convidado'])
+contador = 0
+lista = []
+while contador < numero:    
     if acao == sg.WINDOW_CLOSED:
         break
-    if acao == 'Confirmar':
-        print("----- LISTA DE CONVIDADOS -----")
-        for i in range(int(numero)):
-            nomes = input('nome do convidado: ')
-            print(nomes)
+    if acao == 'Confirmar':        
+        for i in range(1, numero+1):
+            nomes = input(f'nome do convidado {i}: ')
+            lista.append(nomes)      
+    print("----- LISTA DE CONVIDADOS -----")
+    for x in lista:            
+        print(x)
+        contador += 1
+    break        
+    
